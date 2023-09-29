@@ -5,7 +5,7 @@ export default class QuizApp extends LightningElement {
     myQuestions = [
         {
             id: "Question 01",
-            question: "Which one of the following is not a template loop",
+            question: "Which one of the following is not a template loop?",
             answers: {
                 a: "for:each",
                 b: "iterator",
@@ -15,7 +15,7 @@ export default class QuizApp extends LightningElement {
         },
         {
             id: "Question 02",
-            question: "Which of the file is invalid in LWC component folder",
+            question: "Which of the file is invalid in LWC component folder?",
             answers: {
                 a: ".svg",
                 b: ".apex",
@@ -25,7 +25,7 @@ export default class QuizApp extends LightningElement {
         },
         {
             id: "Question 03",
-            question: "Which one of the following is not a directive",
+            question: "Which one of the following is not a directive?",
             answers: {
                 a: "for:each",
                 b: "iterator",
