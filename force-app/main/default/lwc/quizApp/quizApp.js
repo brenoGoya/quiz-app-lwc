@@ -2,7 +2,10 @@ import { LightningElement } from 'lwc';
 
 export default class QuizApp extends LightningElement {
 
-    selected = {}
+    selected = {} // for storing the answers
+
+    correctAnswers = 0 // to show the result
+
     myQuestions = [
         {
             id: "Question 01",
@@ -51,11 +54,15 @@ export default class QuizApp extends LightningElement {
         this.selected = {...this.selected, [name]:value}
     }
 
-    submitHandler() {
-
+    submitHandler(event) {
+        event.preventDefault()
+        let correct = this.myQuestions.filter(item => this.selected[item.id] === item.correctAnswer)
+        this.correctAnswers = correct.length
+        console.log("this.correctAnswers ", this.correctAnswers)
     }
 
     resetHandler() {
-
+        this.selected = {}
+        this.correctAnswers = 0
     }
 }
