@@ -34,4 +34,9 @@ export default class QuizApp extends LightningElement {
             correctAnswer: "c"
         },       
     ]
+
+    changeHandler(event) {
+        console.log("name", event.target.name)
+        console.log("value", event.target.name)
+    }
 }
