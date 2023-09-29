@@ -37,6 +37,6 @@ export default class QuizApp extends LightningElement {
 
     changeHandler(event) {
         console.log("name", event.target.name)
-        console.log("value", event.target.name)
+        console.log("value", event.target.value)
     }
 }
